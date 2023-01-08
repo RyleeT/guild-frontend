@@ -38,6 +38,8 @@ To manage state, I went with React’s Context API. Specifically, there are acco
 - Implement a more comprehensive state management solution than just using the Context API across the board. This should include some sort of caching solution as well
 - Fetch and store rooms more robustly to reduce redundant data fetching and better facilitate simultaneous conversations
 - Add responsive styling, things are only configured to look acceptable on desktop for now
+- Scroll to bottom of MessageList after message is sent
+- Start at bottom of chat when it is overflowing
 - Greatly improve UI in general
 - Implement better error handling to gracefully manage things like WebSocket failures and login issues, then notify the user accordingly
 - Add a real authentication system
