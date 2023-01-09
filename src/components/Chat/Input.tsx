@@ -20,7 +20,7 @@ export default function Input() {
   }
 
   function handleSubmit(e?: React.FormEvent<HTMLFormElement>) {
-    if (!currentRoom || !currentUser) return;
+    if (!currentRoom || !currentUser || !message) return;
 
     e?.preventDefault();
     socket.emit('sendMessage', {
